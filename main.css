@@ -1,0 +1,108 @@
+.logo {
+    max-width: 150px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto 20px; 
+}
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #f5f0d8; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    text-align: left;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 150px;
+}
+
+.fun {
+    color: rgb(48, 216, 216);
+}
+
+.header {
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #000; 
+    margin: 0;
+}
+
+.header .fun {
+    color: rgb(48, 216, 216); 
+}
+
+.content {
+    padding: 50px 10px;
+}
+
+.content h2 {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #a90000; 
+    line-height: 1.2;
+    margin: 0;
+    margin-left: 60px;
+    white-space: nowrap;
+}
+
+.spacer {
+    margin-top: 100px; 
+    text-align: center;
+}
+
+.intro {
+    color: #980000;
+    font-size: 1.6rem;
+}
+
+strong {
+    color: #000;
+}
+
+.clicked {
+    color: rgb(255, 10, 20);
+    font-family: "Knewave", cursive; 
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.vis {
+    display: inline;
+}
+
+button {
+    background: rgb(255, 10, 20);
+    border-radius: 4px;
+    font-family: "Knewave", cursive;
+    font-size: 30px;
+    padding: 10px 20px;
+    color: black;
+    border: none;
+}
+
+.course-link {
+    background-color: #e76f51;
+    color: white;
+    padding: 10px 20px;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+.course-link:hover {
+    background-color: #f4a261;
+}
