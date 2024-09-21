@@ -58,7 +58,7 @@ function checkAnswer() {
 
         
         const link = document.createElement('a');
-        link.href = "Main.html";  
+        link.href = "Index.html";  
         link.textContent = "Go Back";
         link.classList.add('quiz-link');
         resultEl.appendChild(link);  

@@ -59,7 +59,7 @@ function checkanswer() {
         resultEL.textContent = `Quiz Over! You answered ${correctanswers} out of ${totalquestions} correctly.`;
 
         const link = document.createElement('a');
-        link.href = "Main.html";
+        link.href = "Index.html";
         link.textContent = "Go Back";
         resultEL.appendChild(link);
     }
