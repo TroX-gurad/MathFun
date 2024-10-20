@@ -1,0 +1,984 @@
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 28px;
+    background: black;
+    color: rgb(220, 220, 220);
+    font-family: "Crimson Text", serif;
+    line-height: 2;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+button:hover {
+    cursor: pointer;
+}
+
+.invis {
+    display: none;
+}
+
+.vis {
+    display: inline;
+}
+
+.high {
+    color: red;
+    font-family: fantasy;
+}
+
+.range-container {
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+
+div {
+    text-align: center;
+    width: 100%;
+}
+
+.intro {
+  
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input[type="range"] {
+    width: 200px;
+}
+
+.visbtn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+    cursor: pointer;
+    color: white;
+    display: inline;
+}
+
+.invisbtn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+    cursor: pointer;
+    color: white;
+    display: none;
+}
+
+button {
+    font-size: 24px;
+}
+
+.heart-icon {
+color: red;
+}
+
+.lives {
+    font-size: 40px;
+    color: red;      
+}
+.empty-heart {
+
+    color: lightgray; 
+}
+.lives-container1 {
+    position: absolute;
+    top: 10px;
+    right: 42%;
+}
+.pu2q {
+height: 300px;
+width: 750px;
+background-color: white;
+position: absolute;
+top: 15vh;
+padding: 5px;
+color: black;
+border-radius: 5%;
+}
+
+.op1 {
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 55vh;
+    left: 55%;
+    border-radius: 5px;
+}
+
+.op2 {
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 55vh;
+    right: 55%;
+    border-radius: 5px;
+}
+
+.op2:hover {
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 55vh;
+    right: 55%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(16, 140, 248);
+    transform: scale(0.95);
+
+}
+
+.op1:hover {
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 55vh;
+    left: 55%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    transform: scale(0.95);
+    border-color: rgb(16, 140, 248)
+}
+
+
+.choosentwo {
+    border: 5px solid rgb(255, 0, 93); 
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 55vh;
+    right: 55%;
+    border-radius: 5px;
+}
+
+.choosenone {
+border: 5px solid rgb(255, 0, 93); 
+background-color: white;
+color: black;
+width: 450px;
+height: 175px;
+position: absolute; 
+top: 55vh;
+left: 55%;
+border-radius: 5px;
+}
+
+
+
+.big {
+    font-size: 64px;
+    text-align: center;
+    vertical-align: center;
+}
+
+
+
+.Subbtn {
+    background-color: #4CAF50; 
+    color: white;             
+    padding: 10px 20px;       
+    border: none;              
+    border-radius: 5px;        
+    font-size: 32px;           
+    cursor: pointer;          
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    position: absolute;
+    top: 85vh;
+    text-align: center;
+}
+
+.Subbtn:hover {
+    background-color: #45a049; 
+    transform: scale(1.05);    
+}
+
+.Subbtn:active {
+    transform: scale(0.98);    
+}
+.o21 {
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 55vh;
+    left: 65%;
+    border-radius: 5px;
+}
+.o22 {
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 55vh;
+    right: 36.5%;
+    border-radius: 5px;
+}
+
+.o23{
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 55vh;
+    right: 65%;
+    border-radius: 5px;
+}
+
+.o21:hover {
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 55vh;
+    left: 65%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(16, 140, 248);
+    transform: scale(0.95);
+}
+.o22:hover {
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 55vh;
+    right: 36.5%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(16, 140, 248);
+    transform: scale(0.95);
+}
+
+.o23:hover {
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 55vh;
+    right: 65%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(16, 140, 248);
+    transform: scale(0.95);
+}
+
+.ch21 {
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 55vh;
+    left: 65%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(255, 0, 93);
+    transform: scale(0.92);
+
+}
+
+.ch22 {
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 55vh;
+    right: 36.5%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(255, 0, 93);
+    transform: scale(0.92);
+}
+
+.ch23 {
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 55vh;
+    right: 65%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(255, 0, 93);
+    transform: scale(0.92);
+}
+
+.o31 {
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 45vh;
+    left: 55%;
+    border-radius: 5px;
+} 
+
+.o32 {
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 45vh;
+    right: 50%;
+    border-radius: 5px;
+}
+
+.o33 {
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 65vh;
+    left: 55%;
+    border-radius: 5px;
+}
+
+.o34 {
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 65vh;
+    right: 50%;
+    border-radius: 5px;
+}
+
+.pu22q {
+  
+        height: 300px;
+        width: 750px;
+        background-color: white;
+        position: absolute;
+        top: 7.5vh;
+        padding: 5px;
+        color: black;
+        border-radius: 5%;
+        
+}
+
+
+.o31:hover {
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 45vh;
+    left: 55%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(16, 140, 248);
+    transform: scale(0.95);
+
+} 
+
+.o32:hover {
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 45vh;
+    right: 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(16, 140, 248);
+    transform: scale(0.95);
+
+}
+
+.o33:hover {
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 65vh;
+    left: 55%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(16, 140, 248);
+    transform: scale(0.95);
+
+}
+
+.o34:hover {
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 65vh;
+    right: 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(16, 140, 248);
+    transform: scale(0.95);
+
+}
+
+
+
+.ch31 {
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 45vh;
+    left: 55%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(255, 0, 93);
+    transform: scale(0.95);
+
+} 
+
+.ch32 {
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 45vh;
+    right: 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(255, 0, 93);
+    transform: scale(0.95);
+
+}
+
+.ch33 {
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 65vh;
+    left: 55%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(255, 0, 93);
+    transform: scale(0.95);
+
+}
+
+.ch34 {
+    background-color: white;
+    color: black;
+    width: 450px;
+    height: 175px;
+    position: absolute; 
+    top: 65vh;
+    right: 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(255, 0, 93);
+    transform: scale(0.95);
+
+}
+
+
+.o41 {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 55vh;
+    right: 62.5%;
+    border-radius: 5px;
+}
+
+.o42 {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 55vh;
+    left: 62.5%;
+    border-radius: 5px;
+}
+
+.o43 {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 75vh;
+    right: 62.5%;
+    border-radius: 5px; 
+}
+
+.o44 {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 75vh;
+    left: 62.5%;
+    border-radius: 5px;
+}
+
+.o45 {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 55vh;
+    right: 40%;
+    border-radius: 5px;
+}
+
+.o41:hover {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 55vh;
+    right: 62.5%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(16, 140, 248);
+    transform: scale(0.95);
+}
+
+.o42:hover {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 55vh;
+    left: 62.5%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(16, 140, 248);
+    transform: scale(0.95);
+}
+
+.o43:hover {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 75vh;
+    right: 62.5%;
+    border-radius: 5px; 
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(16, 140, 248);
+    transform: scale(0.95);
+}
+
+.o44:hover {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 75vh;
+    left: 62.5%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(16, 140, 248);
+    transform: scale(0.95);
+}
+
+.o45:hover {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 55vh;
+    right: 40%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(16, 140, 248);
+    transform: scale(0.95);
+}
+
+.ch41 {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 55vh;
+    right: 62.5%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(255, 0, 93);
+    transform: scale(0.95);
+}
+
+.ch42 {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 55vh;
+    left: 62.5%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(255, 0, 93);
+    transform: scale(0.95);
+}
+
+.ch43 {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 75vh;
+    right: 62.5%;
+    border-radius: 5px; 
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(255, 0, 93);
+    transform: scale(0.95);
+}
+
+.ch44 {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 75vh;
+    left: 62.5%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(255, 0, 93);
+    transform: scale(0.95);
+}
+
+.ch45 {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 55vh;
+    right: 40%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(255, 0, 93);
+    transform: scale(0.95);
+}
+
+.lives2 {
+    font-size: 40px;
+    color: red;      
+}
+.empty-heart2 {
+
+    color: lightgray; 
+}
+
+button, .visbtn, .invisbtn, .Subbtn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+button:hover, .visbtn:hover, .invisbtn:hover, .Subbtn:hover {
+    background-color: #45a049; 
+    transform: scale(1.05);    
+}
+
+button:active, .visbtn:active, .invisbtn:active, .Subbtn:active {
+    transform: scale(0.98);    
+}
+
+.ch21, .ch22, .ch23, .ch23, .ch31, .ch32, .ch33, .ch34,.ch41, .ch42, .ch43, .ch43, .ch44, .ch45, .choosenone, .choosentwo, .ch56, .ch55, .ch54, .ch53, .ch52, .ch51
+  {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.ch21, .ch22, .ch23, .ch23, .ch31, .ch32, .ch33, .ch34,.ch41, .ch42, .ch43, .ch43, .ch44, .ch45, .choosenone, .choosentwo, .ch56, .ch55, .ch54, .ch53, .ch52, .ch51{
+    background-color: #007BFF; 
+    color: white; 
+}
+
+@keyframes heartBeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes heartLose {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.heart {
+    margin: 5px;
+    font-size: 40px; 
+    transition: color 0.3s; 
+}
+
+.lives {
+    color: red;      
+    animation: heartBeat 0.6s ease-in-out; 
+}
+
+.empty-heart {
+    color: lightgray; 
+    animation: heartLose 0.6s ease-in-out;
+}
+
+.lives2 {
+    color: red;      
+    animation: heartBeat 0.6s ease-in-out; 
+}
+
+.o51 {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 45vh;
+    right: 62.5%;
+    border-radius: 5px;
+}
+
+.o52 {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 45vh;
+    left: 62.5%;
+    border-radius: 5px;
+}
+
+.o53 {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 65vh;
+    right: 62.5%;
+    border-radius: 5px; 
+}
+
+.o54 {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 65vh;
+    left: 62.5%;
+    border-radius: 5px;
+}
+
+.o55 {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 45vh;
+    right: 40%;
+    border-radius: 5px;
+}
+
+.o56 {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 65vh;
+    right: 40%;
+    border-radius: 5px;
+}
+
+.o56:hover, .o55:hover, .o54:hover, .o53:hover, .o52:hover, .o51:hover {
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(16, 140, 248);
+    transform: scale(0.95);
+}
+
+
+.ch51 {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 45vh;
+    right: 62.5%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(255, 0, 93);
+    transform: scale(0.95);
+}
+
+.ch52 {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 45vh;
+    left: 62.5%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(255, 0, 93);
+    transform: scale(0.95);
+}
+
+.ch53 {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 65vh;
+    right: 62.5%;
+    border-radius: 5px; 
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(255, 0, 93);
+    transform: scale(0.95);
+}
+
+.ch54 {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 65vh;
+    left: 62.5%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(255, 0, 93);
+    transform: scale(0.95);
+}
+
+.ch55 {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 45vh;
+    right: 40%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(255, 0, 93);
+    transform: scale(0.95);
+}
+
+.ch56 {
+    background-color: white;
+    color: black;
+    width: 350px;
+    height: 175px;
+    position: absolute; 
+    top: 65vh;
+    right: 40%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 4px solid;
+    border-color: rgb(255, 0, 93);
+    transform: scale(0.95);
+}
