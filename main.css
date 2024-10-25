@@ -106,6 +106,91 @@ button {
 .course-link:hover {
     background-color: #f4a261;
 }
-.h11 {
-    color: #f5f0d8; 
+h5 {
+   color: #f5f0d8; ; 
+}
+
+.footer {
+    background-color: #f8f8f8; /* Light gray background */
+    padding: 20px;            /* Space inside the footer */
+    text-align: left;         /* Align text to the left */
+    border-top: 1px solid #e0e0e0; /* Top border for separation */
+}
+
+.footer-content {
+    max-width: 1200px;       /* Maximum width of the footer */
+    margin: 0 auto;          /* Center the footer */
+    position: absolute;
+    top: 100vh;
+   right: 50%;
+}
+
+.footer h3 {
+    font-size: 1.5em;        /* Heading size */
+    margin-bottom: 10px;     /* Space below headings */
+}
+
+.footer p, .footer ul {
+    font-size: 1em;          /* Paragraph and list item size */
+    line-height: 1.5;        /* Line spacing */
+}
+
+.footer ul {
+    list-style-type: none;   /* Remove bullet points from list */
+    padding: 0;              /* Remove default padding */
+}
+
+.footer a {
+    color: #007bff;          /* Link color */
+    text-decoration: none;    /* Remove underline from links */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+ 
+.footer {
+    background-color: #f8f8f8;  /* Light gray background */
+    padding: 20px;              /* Space inside the footer */
+    text-align: left;           /* Align text to the left */
+    border-top: 1px solid #e0e0e0; /* Top border for separation */
+    width: 100%;                /* Make sure the footer spans the width */
+    position: relative;         /* Adjust position within the document flow */
+    bottom: 0;                  /* Keep the footer at the bottom of the page */
+}
+
+.footer-content {
+    max-width: 1200px;          /* Maximum width of the footer content */
+    margin: 0 auto;             /* Center the footer content */
+}
+
+.footer h3 {
+    font-size: 1.5em;           /* Heading size */
+    margin-bottom: 10px;        /* Space below headings */
+}
+
+.footer p, .footer ul {
+    font-size: 1em;             /* Paragraph and list item size */
+    line-height: 1.5;           /* Line spacing */
+}
+
+.footer ul {
+    list-style-type: none;      /* Remove bullet points from list */
+    padding: 0;                 /* Remove default padding */
+}
+
+.footer a {
+    color: #007bff;             /* Link color */
+    text-decoration: none;      /* Remove underline from links */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+.footer h6 {
+    font-size: 0.9em;           /* Smaller font for the disclaimer */
+    color: #666;                /* Light grey color for the disclaimer */
+    margin-top: 20px;           /* Space above the disclaimer */
+    font-style: italic;         /* Italic text for disclaimer */
 }
